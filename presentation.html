@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Parsing Project Overview</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #ffe6f0; /* soft pink background */
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff66b3, #ff3399);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #fff0f5;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            color: #ff3399;
+            border-bottom: 3px solid #ff66b3;
+            padding-bottom: 10px;
+        }
+
+        p, ul {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .highlight {
+            background-color: #ffcce6;
+            padding: 10px 15px;
+            border-left: 5px solid #ff3399;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        code {
+            background-color: #ffd6e8;
+            padding: 2px 5px;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #ff99cc;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Optional: smooth scroll effect */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Resume Parsing Project</h1>
+        <p>Python + OCR + NLP + Database | All phases summarized</p>
+    </header>
+
+    <!-- Phase 1 -->
+    <section>
+        <h2>Phase 1: Resume Text Extraction</h2>
+        <p class="highlight">Objective:</p>
+        <p>Extract text from resumes in PDF or image format using OCR.</p>
+        <ul>
+            <li>Installed Tesseract OCR for text extraction.</li>
+            <li>Converted PDF resumes to images using Poppler.</li>
+            <li>Extracted raw text using Python's <code>pytesseract</code> library.</li>
+            <li>Saved extracted text to a file for further processing.</li>
+        </ul>
+    </section>
+
+    <!-- Phase 2 -->
+    <section>
+        <h2>Phase 2: Data Cleaning & Normalization</h2>
+        <p class="highlight">Objective:</p>
+        <p>Clean extracted text and remove noise for accurate processing.</p>
+        <ul>
+            <li>Removed unwanted characters and extra spaces.</li>
+            <li>Normalized formatting for dates, phone numbers, and other entities.</li>
+            <li>Tokenized text and applied basic normalization using Python.</li>
+        </ul>
+    </section>
+
+    <!-- Phase 3 -->
+    <section>
+        <h2>Phase 3: Named Entity Recognition (NER)</h2>
+        <p class="highlight">Objective:</p>
+        <p>Identify important entities like Name, Skills, Education, and Experience.</p>
+        <ul>
+            <li>Used SpaCy to implement NER.</li>
+            <li>Trained custom NER models with labeled resume data.</li>
+            <li>Evaluated model using precision, recall, and F1-score.</li>
+        </ul>
+    </section>
+
+    <!-- Phase 4 -->
+    <section>
+        <h2>Phase 4: Relationship Extraction</h2>
+        <p class="highlight">Objective:</p>
+        <p>Associate entities to establish meaningful relationships.</p>
+        <ul>
+            <li>Linked each person to their education, skills, and experiences.</li>
+            <li>Used rule-based parsing and sentence-level analysis.</li>
+            <li>Stored relationships in a structured format for analysis.</li>
+        </ul>
+    </section>
+
+    <!-- Phase 5 -->
+    <section>
+        <h2>Phase 5: Database & Analysis</h2>
+        <p class="highlight">Objective:</p>
+        <p>Store parsed resume data in a structured database for querying and analysis.</p>
+        <ul>
+            <li>Designed database schema for Persons, Education, Skills, and Experience.</li>
+            <li>Inserted extracted entities and relationships into SQLite database.</li>
+            <li>Queried database to retrieve meaningful insights.</li>
+            <li>Prepared data for machine learning models to predict trends or analyze skills.</li>
+        </ul>
+    </section>
+
+    <footer>
+        Resume Parsing Project &copy; 2026 | Built with Python, OCR, NLP, and SQLite
+    </footer>
+</body>
+</html>
