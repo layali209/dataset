@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layeli El Ghofrane Moumni | Portfolio</title>
+
+<style>
+
+/* ===== GLOBAL ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fa;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ===== HEADER ===== */
+header{
+    height:100vh;
+    background: linear-gradient(135deg,#6a11cb,#2575fc);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+header h1{
+    font-size:50px;
+    animation: fadeDown 1.2s ease;
+}
+
+header p{
+    font-size:20px;
+    margin-top:15px;
+    animation: fadeUp 1.5s ease;
+}
+
+@keyframes fadeDown{
+    from{opacity:0; transform:translateY(-30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes fadeUp{
+    from{opacity:0; transform:translateY(30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* ===== SECTIONS ===== */
+section{
+    padding:70px 10%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#2575fc;
+    font-size:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    margin:20px 0;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* ===== SKILLS ===== */
+.skills-container{
+    text-align:center;
+}
+
+.skill{
+    display:inline-block;
+    background:#2575fc;
+    color:white;
+    padding:10px 20px;
+    margin:10px;
+    border-radius:25px;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.skill:hover{
+    background:#6a11cb;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    header h1{
+        font-size:35px;
+    }
+    header p{
+        font-size:16px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Layeli El Ghofrane Moumni</h1>
+    <p>IT Management Student | Future AI & BI Specialist</p>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            Passionate IT Management student specializing in Business Intelligence.
+            Interested in Artificial Intelligence, Data Science, and building impactful tech projects.
+            Disciplined, ambitious, and always seeking growth opportunities.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Experience</h2>
+    <div class="card">
+        <ul>
+            <li>Waitress – Summer 2024</li>
+            <li>Festival de Tabarka – Organization & Sales Team</li>
+            <li>Microsoft Club – Sponsoring Department</li>
+            <li>Internship – AF Bodybuilding Center</li>
+            <li>Internship – GymBox</li>
+            <li>National Team Athlete (2017–2024)</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Python</span>
+        <span class="skill">Business Intelligence</span>
+        <span class="skill">Data Analysis</span>
+    </div>
+</section>
+
+<section>
+    <h2>Projects</h2>
+    <div class="card">
+        <p>• Camping Reservation Website (HTML, Tailwind, PHP, MySQL)</p>
+        <p>• Price Comparison Website (Flask + Web Scraping)</p>
+        <p>• Cinema Management System (IBM RSA)</p>
+    </div>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: layalimoumni@gmail.com</p>
+        <p>Phone: 56107271</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Layeli El Ghofrane Moumni | Future AI Leader 🚀</p>
+</footer>
+
+</body>
+</html>
